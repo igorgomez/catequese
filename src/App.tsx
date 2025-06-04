@@ -12,7 +12,7 @@ import './styles/globals.css';
 function App() {
   return (
     <ProgressProvider>
-      <Router>
+      <Router basename={import.meta.env.BASE_URL}>
         <div className="min-h-screen flex flex-col bg-gradient-to-b from-blue-50 to-white">
           <Header />
           <main className="flex-grow container mx-auto px-4 py-6">
